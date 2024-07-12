@@ -22,6 +22,8 @@ age = input()
 
 
 
+
+
 """
 age = input()
 # 🚨 Don't change the code above 👆
