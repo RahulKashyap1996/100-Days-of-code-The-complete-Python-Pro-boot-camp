@@ -25,4 +25,14 @@ for n in range(0, len(student_scores)):
   student_scores[n] = int(student_scores[n])
 
 # Write your code below this row 👇
-print(f"The highest score in the class is: {max(student_scores)}")
+#print(f"The highest score in the class is: {max(student_scores)}")
+
+maxi=0
+for n in range(0, len(student_scores)):
+  
+  a=student_scores[n]
+  if a>maxi:
+    maxi=a
+     
+print(f"The highest score in the class is: {maxi}")
+ 
