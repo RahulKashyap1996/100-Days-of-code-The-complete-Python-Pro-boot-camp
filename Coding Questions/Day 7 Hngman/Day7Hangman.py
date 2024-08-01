@@ -1,6 +1,13 @@
-import random
 
-word_list=["ardvark","baboon","camel"]
+import os
+import random
+import W
+print("Current Directory Contents:", os.listdir('.'))
+try:
+    word_list = W.word_list
+    print("Word list imported successfully.")
+except AttributeError:
+    print("Failed to import word_list from Words module.")
 chosen_word=random.choice(word_list)
 print('''888                                                           
 888                                                           
@@ -63,7 +70,7 @@ while  display.__contains__("_") or count<len(chosen_word):
         print('''       _______
                         |/      |
                         |      (_)
-                        |      \|
+                        |       |
                         |       |
                         |       
                         |
@@ -74,7 +81,7 @@ while  display.__contains__("_") or count<len(chosen_word):
         print('''       _______
                         |/      |
                         |      (_)
-                        |      \|/
+                        |      /|/
                         |       |
                         |      
                         |
@@ -85,9 +92,9 @@ while  display.__contains__("_") or count<len(chosen_word):
         print('''       _______
                         |/      |
                         |      (_)
-                        |      \|/
+                        |      /|/
                         |       |
-                        |      / \
+                    #   |      / /
                         |
                     jgs_|___
                             ''')   
@@ -95,7 +102,9 @@ while  display.__contains__("_") or count<len(chosen_word):
         print(f"you haven't guessed all the letters for the word {chosen_word}")
         break
         
-
+clr=input("Do you want to clear the screen \n")
+if clr.lower=="yes":
+    os.system("cls")
                
 
 
